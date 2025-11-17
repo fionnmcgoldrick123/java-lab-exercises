@@ -1,5 +1,9 @@
 package ie.atu.sw;
 
-public record Attendee() {
+import java.util.List;
 
+public record Attendee(String id, String name, String email, List<Ticket> tickets) {
+	public Attendee {
+		
+	}
 }
