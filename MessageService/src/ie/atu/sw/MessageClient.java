@@ -27,7 +27,7 @@ public class MessageClient {
 		
 		//Make the remote method invocation. This results in the Message object being transferred
 		//to us over the network in serialized form. 
-		Message message = ms.getMessage();
+		RemoteMessage message = ms.getMessage();
 		
 		//Print out the message from the message object.
 		System.out.println(message.message());

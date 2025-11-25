@@ -12,5 +12,5 @@ package ie.atu.sw;
  */
 import java.rmi.*;
 public interface MessageService extends Remote{
-	public Message getMessage() throws RemoteException;
+	public RemoteMessage getMessage() throws RemoteException;
 }

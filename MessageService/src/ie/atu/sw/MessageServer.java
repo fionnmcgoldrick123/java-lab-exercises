@@ -19,7 +19,7 @@ public class MessageServer {
 		String s = "Message from " + System.getProperty("user.name");
 		
 		//Create an instance of the class Message and pass the string as an argument to its constructor.
-		Message msg = new Message(s);
+		RemoteMessage msg = new Message(s);
 		
 		//Create an instance of a MessageService. As MessageServiceImpl implements the MessageService
 		//interface, it can be referred to as a MessageService type.

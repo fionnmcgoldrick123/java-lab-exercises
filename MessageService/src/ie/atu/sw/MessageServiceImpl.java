@@ -21,13 +21,13 @@ import java.rmi.*;
 import java.rmi.server.*;
 public class MessageServiceImpl extends UnicastRemoteObject implements MessageService {
 	private static final long serialVersionUID = 1L;
-	private Message message;
+	private RemoteMessage message;
 	
-	public MessageServiceImpl(Message m) throws RemoteException{
+	public MessageServiceImpl(RemoteMessage m) throws RemoteException{
 		this.message = m;
 	}
 	
-	public Message getMessage() throws RemoteException {
+	public RemoteMessage getMessage() throws RemoteException {
 		return message;
 	}
 }
